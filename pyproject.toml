@@ -1,0 +1,31 @@
+[build-system]
+requires = ["flit_core>=3.2"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "jvm"
+version = "0.0.1"
+description = "Computer Vision Deep Learning Library based on JAX."
+readme = "README.md"
+requires-python =">=3.9"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Byunghyun Kim", email = "kimbh.mail@gmail.com"},
+]
+
+keywords = ["jax", "neural-networks", "deep-learning", "computer-vision"]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+urls = {repository = "https://github.com/bhyun-kim/qvix"}
+dependencies=[
+    "flax",
+    "torch",
+    "torchvision"
+]
